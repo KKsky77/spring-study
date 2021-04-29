@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    <bean id="user" class="com.sky.ioc.User">-->
+    <!--        <constructor-arg index="0" value="sky"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="user" class="com.sky.ioc.User">-->
+    <!--        <constructor-arg type="java.lang.String" value="sky"/>-->
+    <!--    </bean>-->
+
+    <bean id="user" class="com.sky.ioc.User" name="用户,us">
+        <constructor-arg name="name" value="sky"/>
+    </bean>
+
+    <import resource="beans.xml"/>
+    <import resource="beans1.xml"/>
+
+
+</beans>
